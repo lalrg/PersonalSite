@@ -1,0 +1,10 @@
+@import url('~/css/global-variables.css');
+body {
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+    background-color: var(--principal);
+}
+
+.personal-picture img {
+    height: 100%;
+    width: 100%;
+  }

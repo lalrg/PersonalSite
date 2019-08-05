@@ -1,0 +1,10 @@
+body {
+    --principal: #c2c2c2;
+    --green: #33e7b7;
+    --gray: #6f6f6f;
+    --vuejs: green;
+    --dotnet: purple;
+    --mssql: yellow;
+    --reactjs: blue;
+    --azure: lightblue;
+}
