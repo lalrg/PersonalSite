@@ -1,7 +1,8 @@
 @import url('~/assets/css/global-variables.css');
 body {
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
-    background-color: var(--principal);
+    background-color: var(--green);
+    margin: 0;
 }
 
 .personal-picture img {
