@@ -66,5 +66,6 @@ li {
 h4 {
   color: var(--gray);
   text-align: center;
+  margin-bottom: 0;
 }
 </style>
