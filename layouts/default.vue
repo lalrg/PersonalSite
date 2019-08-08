@@ -1,21 +1,15 @@
 <template>
-  <el-card class="box-card">
-    <nuxt />
-  </el-card>
+  <div>
+    <Navbar></Navbar>
+    <el-card class="box-card">
+      <nuxt />
+    </el-card>
+  </div>
 </template>
 <script>
+import Navbar from '~/components/NavBar/NavBar.vue'
 export default {
-  data() {
-    return {
-      activeIndex: '1',
-      activeIndex2: '1'
-    }
-  },
-  methods: {
-    handleSelect(key, keyPath) {
-      console.log(key, keyPath)
-    }
-  }
+  components: { Navbar }
 }
 </script>
 

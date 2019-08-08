@@ -64,7 +64,7 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
 .el-collapse-item__header {
   display: grid;
   grid-template-columns: 1fr auto;

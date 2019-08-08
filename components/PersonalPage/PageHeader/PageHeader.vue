@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import PageHeaderSkills from '~/components/PageHeader/PageHeaderSkills.vue'
-import PageHeaderPresentation from '~/components/PageHeader/PageHeaderPresentation.vue'
+import PageHeaderSkills from '~/components/PersonalPage/PageHeader/PageHeaderSkills.vue'
+import PageHeaderPresentation from '~/components/PersonalPage/PageHeader/PageHeaderPresentation.vue'
 import 'element-ui/lib/theme-chalk/display.css'
 
 export default {
@@ -15,7 +15,11 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.header-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 @media (min-width: 900px) {
   .header-grid {
     grid-template-columns: 1fr 1fr;

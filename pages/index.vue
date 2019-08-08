@@ -6,12 +6,24 @@
 </template>
 
 <script>
-import PageHeader from '~/components/PageHeader/PageHeader.vue'
-import PageBody from '~/components/PageBody/PageBody.vue'
+import PageHeader from '~/components/PersonalPage/PageHeader/PageHeader.vue'
+import PageBody from '~/components/PersonalPage/PageBody/PageBody.vue'
+
 export default {
   components: {
     PageHeader,
     PageBody
+  },
+  data() {
+    return {
+      activeIndex: '1',
+      activeIndex2: '1'
+    }
+  },
+  methods: {
+    handleSelect(key, keyPath) {
+      console.log(key, keyPath)
+    }
   }
 }
 </script>

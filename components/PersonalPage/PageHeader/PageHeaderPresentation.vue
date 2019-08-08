@@ -20,7 +20,7 @@
 <script>
 export default {}
 </script>
-<style>
+<style scoped>
 .container {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -30,10 +30,6 @@ export default {}
 }
 .text {
   color: var(--gray);
-}
-.header-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 @media (max-width: 599px) {
   .el-avatar {
