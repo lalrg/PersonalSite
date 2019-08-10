@@ -1,12 +1,10 @@
 <template>
   <div class="container">
-    <div>
-      <el-avatar
-        class="personal-picture"
-        :size="150"
-        src="/images/Luis-Richmond-2.jpeg"
-      ></el-avatar>
-    </div>
+    <el-avatar
+      class="personal-picture"
+      :size="150"
+      src="/images/Luis-Richmond-2.jpeg"
+    ></el-avatar>
     <div class="text">
       <h2>
         Luis Alexander Richmond Guzmán
@@ -27,9 +25,6 @@ export default {}
   grid-column-gap: 20px;
   align-content: center;
   align-items: center;
-}
-.text {
-  color: var(--gray);
 }
 @media (max-width: 599px) {
   .el-avatar {

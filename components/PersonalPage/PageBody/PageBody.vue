@@ -7,9 +7,9 @@
     >
       <template slot="title">
         <div class="center-text">
-          <i :class="`el-icon-${bodySection.icon}`" />&nbsp;&nbsp;{{
-            bodySection.name
-          }}&nbsp;&nbsp;
+          <i :class="`el-icon-${bodySection.icon}`" />&nbsp;&nbsp;
+          <h4>{{ bodySection.name }}</h4>
+          &nbsp;&nbsp;
           <i :class="`el-icon-${bodySection.icon}`" />
         </div>
       </template>
@@ -18,16 +18,12 @@
   </el-collapse>
 </template>
 <script>
+import PageBodyAbout from '~/components/PersonalPage/PageBody/PageBodyAbout.vue'
 export default {
+  components: { PageBodyAbout },
   data: () => {
     return {
       bodySections: [
-        {
-          icon: 'user',
-          name: 'About me',
-          component: 'About',
-          active: true
-        },
         {
           icon: 'star-off',
           name: 'Achievements',
@@ -41,9 +37,9 @@ export default {
           active: true
         },
         {
-          icon: 'coffee-cup',
-          name: 'Hobbies ',
-          component: 'Hobbies',
+          icon: 'user',
+          name: 'About me',
+          component: 'About',
           active: true
         }
       ]
@@ -65,13 +61,7 @@ export default {
 }
 </script>
 <style scoped>
-.el-collapse-item__header {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-content: center;
-  align-items: center;
-}
-.center-text {
-  text-align: center;
+h4 {
+  display: inline;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <el-menu
-    default-active="0"
+    default-active="/"
     class="el-card is-always-shadow"
     mode="horizontal"
     background-color="var(--gray)"
@@ -9,13 +9,12 @@
   >
     <el-menu-item
       v-for="(menuItem, index) in menuItems"
-      :key="menuItem.name"
-      :index="index"
+      :key="index"
+      :index="menuItem.path"
+      @click="redirect(menuItem.path)"
     >
-      <nuxt-link :to="menuItem.path">{{
-        menuItem.name
-      }}</nuxt-link></el-menu-item
-    >
+      {{ menuItem.name }}
+    </el-menu-item>
   </el-menu>
 </template>
 <script>
@@ -25,17 +24,22 @@ export default {
       menuItems: [
         {
           name: 'Index',
-          path: 'Index'
+          path: '/'
         },
         {
           name: 'Blog',
-          path: 'Blog'
+          path: '/Blog'
         },
         {
           name: 'About the Author',
-          path: 'About'
+          path: '/About'
         }
       ]
+    }
+  },
+  methods: {
+    redirect(path) {
+      this.$router.push(path)
     }
   }
 }
