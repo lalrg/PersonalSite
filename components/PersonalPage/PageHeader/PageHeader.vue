@@ -8,7 +8,6 @@
 <script>
 import PageHeaderSkills from '~/components/PersonalPage/PageHeader/PageHeaderSkills.vue'
 import PageHeaderPresentation from '~/components/PersonalPage/PageHeader/PageHeaderPresentation.vue'
-import 'element-ui/lib/theme-chalk/display.css'
 
 export default {
   components: { PageHeaderSkills, PageHeaderPresentation }
