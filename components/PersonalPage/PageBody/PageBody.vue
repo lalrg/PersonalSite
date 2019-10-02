@@ -19,27 +19,29 @@
 </template>
 <script>
 import PageBodyAbout from '~/components/PersonalPage/PageBody/PageBodyAbout.vue'
+import PageBodyTechnologies from '~/components/PersonalPage/PageBody/PageBodyTechnologies.vue'
+import PageBodyExperience from '~/components/PersonalPage/PageBody/PageBodyExperience.vue'
 export default {
-  components: { PageBodyAbout },
+  components: { PageBodyAbout, PageBodyTechnologies, PageBodyExperience },
   data: () => {
     return {
       bodySections: [
         {
+          icon: 'user',
+          name: 'About me',
+          component: 'About',
+          active: true
+        },
+        {
           icon: 'star-off',
-          name: 'Achievements',
-          component: 'Achievements',
+          name: 'Technologies',
+          component: 'Technologies',
           active: true
         },
         {
           icon: 'suitcase',
           name: 'Working Experience',
           component: 'Experience',
-          active: true
-        },
-        {
-          icon: 'user',
-          name: 'About me',
-          component: 'About',
           active: true
         }
       ]

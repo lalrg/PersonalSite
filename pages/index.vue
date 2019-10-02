@@ -1,6 +1,7 @@
 <template>
   <div>
     <page-header slot="header"></page-header>
+    <br />
     <page-body></page-body>
   </div>
 </template>

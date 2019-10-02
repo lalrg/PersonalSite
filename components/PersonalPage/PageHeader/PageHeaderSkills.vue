@@ -4,11 +4,9 @@
     <div class="container">
       <ul>
         <li v-for="skill in skills" :key="skill.name">
-          {{ skill.name }}
-          <el-progress
-            :percentage="skill.percentage"
-            :color="`var(--${skill.color})`"
-          ></el-progress>
+          <el-tag type="warning" size="mini" effect="dark">{{
+            skill.name
+          }}</el-tag>
         </li>
       </ul>
     </div>
@@ -20,29 +18,16 @@ export default {
     return {
       skills: [
         {
-          name: 'Dotnet',
-          percentage: 90,
-          color: 'green'
+          name: 'Proactive'
         },
         {
-          name: 'VueJs',
-          percentage: 60,
-          color: 'green'
+          name: 'Creative'
         },
         {
-          name: 'MSSQL',
-          percentage: 50,
-          color: 'green'
+          name: 'Self-efficient'
         },
         {
-          name: 'React',
-          percentage: 20,
-          color: 'green'
-        },
-        {
-          name: 'Microsoft Azure',
-          percentage: 90,
-          color: 'green'
+          name: 'Love to code'
         }
       ]
     }
@@ -60,8 +45,8 @@ ul {
 }
 li {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-column-gap: 15px;
+  grid-template-columns: 1fr;
+  margin: 5px;
 }
 h4 {
   color: var(--gray);
