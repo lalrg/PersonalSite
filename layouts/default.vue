@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar></Navbar>
+    <Navbar v-if="SHOW_NAVBAR === 'true'"></Navbar>
     <el-card class="box-card">
       <nuxt />
     </el-card>
@@ -9,7 +9,12 @@
 <script>
 import Navbar from '~/components/NavBar/NavBar.vue'
 export default {
-  components: { Navbar }
+  components: { Navbar },
+  data: () => {
+    return {
+      SHOW_NAVBAR: process.env.SHOW_NAVBAR
+    }
+  }
 }
 </script>
 

@@ -1,3 +1,5 @@
+const env = require('dotenv').config()
+
 export default {
   mode: 'universal',
   /*
@@ -52,5 +54,6 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
-  }
+  },
+  env: env.parsed
 }
